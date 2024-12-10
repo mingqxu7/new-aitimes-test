@@ -22,12 +22,30 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+            padding-bottom: 6rem;
         }
         section {
             background-color: #f9f9f9;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .article-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .event {
+            border-left: 4px solid #2c3e50;
+            padding-left: 1rem;
+            margin: 1rem 0;
         }
         footer {
             background-color: #2c3e50;
@@ -48,6 +66,50 @@
         <section>
             <h2>Latest Updates</h2>
             <p>Stay tuned for the latest news and updates about artificial intelligence.</p>
+        </section>
+
+        <section>
+            <h2>Featured Articles</h2>
+            <div class="article-grid">
+                <div class="article-card">
+                    <h3>The Future of AI</h3>
+                    <p>Exploring the upcoming trends in artificial intelligence...</p>
+                </div>
+                <div class="article-card">
+                    <h3>AI in Healthcare</h3>
+                    <p>How AI is transforming modern medicine...</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>AI News Roundup</h2>
+            <ul>
+                <li>New breakthrough in machine learning algorithms</li>
+                <li>Latest developments in natural language processing</li>
+                <li>Updates on AI regulations and policies</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>AI Conference 2024</h3>
+                <p>Date: March 15-17, 2024</p>
+                <p>Location: Virtual Event</p>
+            </div>
+            <div class="event">
+                <h3>Machine Learning Workshop</h3>
+                <p>Date: April 5, 2024</p>
+                <p>Location: Tech Hub</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: info@aitimes.com</p>
+            <p>Twitter: @AITimes</p>
+            <p>LinkedIn: AI Times Official</p>
         </section>
     </main>
     <footer>
